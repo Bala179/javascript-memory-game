@@ -19,6 +19,11 @@ function shuffle(array){
     return copy;
 }
 
+function resetHighScore(){
+    window.localStorage.setItem('score', 0);
+    window.location.reload();
+}
+
 function insertScore(){
     if(!Number.isInteger(parseInt(highScore))){
         highScore = '0';
