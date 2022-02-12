@@ -4,15 +4,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="./game.js"></script>
 </head>
 
-<body>
+<body onload="insertScore()">
     <div class="main">
         <div class="heading">
             Memory Game 🎰
         </div>
         <div id="start">
-            <span id="start_button" class="start-btn">START</span>
+            <span id="start_button" class="start-btn" onclick="newGame()">START</span>
             <div class="leaderboard" id="score">Best Score 🏆: </div>
         </div>
         <div class="game_start">
