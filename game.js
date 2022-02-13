@@ -53,7 +53,7 @@ function gameWon(score){
 
 function scoring(m, t){
     const f = 0.5;
-    let newScore = (1 - t/maxTime)*f + (1 - m/maxMoves)*(1-f);
+    let newScore = (t/maxTime)*f + (1 - m/maxMoves)*(1-f);
     newScore *= 1000;
     newScore = Math.round(newScore);
     return newScore;
